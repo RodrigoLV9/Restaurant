@@ -1,0 +1,15 @@
+@mixin flexLayout(){
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin gridLayout(){
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+@mixin image(){
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

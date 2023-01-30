@@ -1,0 +1,66 @@
+footer{
+    height: 280px;
+    width: 100%;
+    background-color: map-get($colours,primary);
+}
+.foot1{
+    border-bottom: 1px solid white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot1__link1, .foot1__link2{
+    text-decoration: none;
+    color:white;
+    display: block;
+    margin:30px;
+
+}
+.foot1__link2::after{
+    content:"BOOKINGS";
+    padding: 15px;
+    position: absolute;
+
+}
+.foot1__link2::after:hover{
+    transform: translateX(100%);
+}
+.line{
+    background-color: white;
+    width:1.5px;
+    height: 20px
+}
+.footer__text{
+    text-align: center;
+    padding:25px;
+    color:white;
+    font-size: 16px;
+}
+.foot2{
+    @include flexLayout;
+    gap:30px;
+}
+.foot2__logo1, .foot2__logo2{
+    display: block;
+    filter:invert(1);
+    transition: filter .3s;
+}
+.foot2__logo2:hover{
+    filter:invert(0)
+}
+.foot2__logo1:hover{
+    filter:invert(0)
+}
+.foot2__logo1{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/87/87390.png");
+    @include image();
+    width:20px;
+    height:20px;
+}
+.foot2__logo2{
+    background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968917.png");
+    @include image();
+    height:25px;
+    width:25px;
+}

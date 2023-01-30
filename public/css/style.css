@@ -1,0 +1,221 @@
+.menu-logo {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  margin: 5px;
+  z-index: -1;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.822);
+  height: 70px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  grid-template-columns: repeat(11, 1fr);
+  position: fixed;
+  transition: transform 0.3s;
+}
+.nav .nav__items {
+  text-decoration: none;
+  color: rgb(219, 219, 219);
+  justify-self: center;
+  padding: 10px;
+  transition: border-bottom 0.3s;
+}
+.nav .nav__items:hover {
+  border-bottom: 1px solid #64513f;
+}
+
+.nav__logo {
+  background-image: url("../assets/logos/logo-principal-2.png");
+  background-size: 60%;
+  grid-column: 5/8;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-logo {
+    z-index: 1;
+  }
+  .nav {
+    height: 500px;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .nav__logo {
+    order: -1;
+    background-size: 50%;
+  }
+}
+.nav-nuevo {
+  transform: translateY(0);
+}
+
+footer {
+  height: 280px;
+  width: 100%;
+  background-color: #64513f;
+}
+
+.foot1 {
+  border-bottom: 1px solid white;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot1__link1, .foot1__link2 {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 30px;
+}
+
+.foot1__link2::after {
+  content: "BOOKINGS";
+  padding: 15px;
+  position: absolute;
+}
+
+.foot1__link2::after:hover {
+  transform: translateX(100%);
+}
+
+.line {
+  background-color: white;
+  width: 1.5px;
+  height: 20px;
+}
+
+.footer__text {
+  text-align: center;
+  padding: 25px;
+  color: white;
+  font-size: 16px;
+}
+
+.foot2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.foot2__logo1, .foot2__logo2 {
+  display: block;
+  filter: invert(1);
+  transition: filter 0.3s;
+}
+
+.foot2__logo2:hover {
+  filter: invert(0);
+}
+
+.foot2__logo1:hover {
+  filter: invert(0);
+}
+
+.foot2__logo1 {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/87/87390.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.foot2__logo2 {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968917.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+}
+
+.img-banner {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.info {
+  margin: 30px auto;
+}
+
+h1, p {
+  color: #64513f;
+  text-align: center;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  padding: 20px;
+}
+
+p {
+  font-style: italic;
+  font-size: 1.4em;
+  display: block;
+  margin: auto;
+  width: 600px;
+  line-height: 30px;
+}
+
+.info-img {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.info-img1 {
+  background-image: url("../assets/imgs/img1.jpg");
+}
+
+.info-img2 {
+  background-image: url("../assets/imgs/img2.jpg");
+}
+
+.info-img3 {
+  background-image: url("../assets/imgs/img3.jpg");
+}
+
+.info-img4 {
+  background-image: url("../assets/imgs/img4.jpg");
+}
+
+.info-img5 {
+  background-image: url("../assets/imgs/img5.jpg");
+}
+
+.info-img6 {
+  background-image: url("../assets/imgs/img6.jpg");
+}
+
+/*# sourceMappingURL=style.css.map */

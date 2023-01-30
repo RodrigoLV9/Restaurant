@@ -1,0 +1,6 @@
+@function logo($url){
+    @return (url("../assets/logos/"+$url))
+};
+@function img($url){
+    @return (url("../assets/imgs/"+$url))
+}
