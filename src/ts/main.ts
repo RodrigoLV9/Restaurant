@@ -3,3 +3,5 @@ const nav=document.getElementById("nav");
 menu?.addEventListener("click",()=>{
     nav?.classList.toggle("nav-nuevo")
 })
+
+

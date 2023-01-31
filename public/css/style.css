@@ -3,7 +3,7 @@
   height: 30px;
   position: fixed;
   margin: 5px;
-  z-index: -1;
+  display: none;
 }
 
 .nav {
@@ -20,7 +20,7 @@
 }
 .nav .nav__items {
   text-decoration: none;
-  color: rgb(219, 219, 219);
+  color: rgb(202, 202, 202);
   justify-self: center;
   padding: 10px;
   transition: border-bottom 0.3s;
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 900px) {
   .menu-logo {
-    z-index: 1;
+    display: block;
   }
   .nav {
     height: 500px;
@@ -61,33 +61,65 @@
 }
 
 footer {
-  height: 280px;
+  height: 240px;
   width: 100%;
   background-color: #64513f;
 }
 
 .foot1 {
   border-bottom: 1px solid white;
-  padding: 30px;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .foot1__link1, .foot1__link2 {
+  width: 100px;
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.link1, .link2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
   text-decoration: none;
   color: white;
+}
+
+.link1::before {
   display: block;
-  margin: 30px;
-}
-
-.foot1__link2::after {
-  content: "BOOKINGS";
-  padding: 15px;
+  content: "CONTACT";
   position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
 }
 
-.foot1__link2::after:hover {
+.foot1__link1:hover .link1 {
+  transform: translateX(100%);
+}
+
+.link2::before {
+  display: block;
+  content: "BOOKINGS";
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+}
+
+.foot1__link2:hover .link2 {
   transform: translateX(100%);
 }
 
@@ -100,8 +132,9 @@ footer {
 .footer__text {
   text-align: center;
   padding: 25px;
-  color: white;
+  color: rgb(202, 202, 202);
   font-size: 16px;
+  font-style: italic;
 }
 
 .foot2 {
@@ -150,7 +183,7 @@ footer {
 }
 
 body {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(202, 202, 202);
 }
 
 .img-banner {
